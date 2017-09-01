@@ -1,64 +1,96 @@
 <!doctype html><head><script src="eveal.js"></script></head><body>
 
+# UW Political Science PoliInformatics Conference August 2017
+- Organizer: John Wilkerson, UW
+- http://poliinformatics.org/wordpress/wp-content/uploads/2017/08/PINet-IslandWood-Agenda.pdf
+- https://www.dropbox.com/s/fyybdc91bzz5dfi/press_coverage.pdf
 
-# Talk
-### with slides
-
-<small>
-  by me
-  <br/>
-
-  Sometime 2017
-</small>
-
-<small>
-  _?_ for keyboard shortcuts<br/>
-</small>
-
----
-### Run these slides Locally
-
-``` bash
-git clone git@github.com:traceypooh/eveal.js; open eveal.js/index.html
+```bash
+git clone git@github.com:traceypooh/polliinformatics; open polliinformatics/index.html
 ```
 
-(network not needed after clone)
+---
+# neural nets keynote
+- Noah Smith, Univ. of Wash.
+Neural nets are like squash -- sloping increasing curve LTR function w/ big vertical middle and fast tapers on either end.
+"data squashers"
+<img src="http://www.holehouse.org/mlclass/12_Support_Vector_Machines_files/Image%20[1].png"/> (SVM Support Vector Machine)
 
 ---
-### Say Something
-- keep calm
-- carry on
+# frames
+"when people wonder why there is so much resentment of clinton they need to look no forward than the big lie about philandering that Stephanopolous, Carville helped to put over in 1992"
+https://framenet.icsi.berkeley.edu
 
 ---
-### Choices
+# Open-SESAME
+- (see prior slide)
+- also, opensource
+- cognizer: Democrats
+- topic: why is there so much resentment of clinton
+~69% accuracy - on par w/ closed google
 
-You can:
-- copy the _index.html_ file to _tech-deck.html_
-   - modify it
-   - put as many 'decks' as you like in this repo
-   - and then open tech-deck.html in your browser
-- or keep cloning/forking to multiple repositories..
+_mentioned stanford NLP and Spacy_
 
----
-I like to
-``` bash
-atom README.md
-```
-
-to get nice coloring and edit help/cues from my editor, Atom.
+bring _the right_ (and right kind of) bias (is good!) for your dataset (eg: in science realm; political speeches -- all that helps and helps you pick the right NLP etc.)
 
 ---
-<!-- .slide: data-background="https://media.giphy.com/media/Gdjgn0hy8zBRK/giphy.gif" -->
-# Demo Time!
+# Full Day of Conference
 
 ---
-### Let's table that discussion
-
-| fruity   | color                    | etc |
-| -------- |:------------------------ |:----|
-| orange   | well, i mean it's orange | tic |
-| banana   | mushy                    | tac |
+## Computer Vision for Social Science
+  - Nora Webb Williams
+  - 9500 images from 150K #BLM tweets
+  - Computer Vision w/ neural nets:
+    - obj recognition (tower?)
+    - face (is John Legend in it?)
+    - sentiment (evoke anger, fear..)
+  - using AlexNet neural net (y/n questions to already trained data and net)
+  - get ~90% recognition for obj and face recognition
+  - sentiment is much worse ~70% or less - seek helped
+    - wanted face detection help
+      - faceomatic? -> Matroid -> FaceNet
 
 ---
-<!-- .slide: data-background="https://media.giphy.com/media/q4ICE9wYvOwBG/giphy.gif" -->
-# THE END
+## "Who Protests?  Using Social Media Data to Estimate how Social .. Influences .. Participation"
+  - "are people w/ more grievances likely to protest more?" -- yes!
+
+---
+## "Dark Parties: Dark Money Networks & Negative Advertising"
+  - Stan Oklobdzija (UCSD, PhD candidate)
+  - drop in 2016 -- but largely due to Koch brothers not adding $ towards Trump
+  - concludes/shows: increased activity by “dark parties” correlates w/ greater proportion of negative Ads in media markets.
+
+---
+## ".. Legislative Effectiveness and Bill Connections" - Josh Ryan
+  - more connection to other bills -> high indicator of passing and 'effective'
+  - female congress tend to do better (unclear why)
+  - seniority and committee chairs have more connected bills
+  - female legislators have _less_ connected bills
+  - female, african american, latinos have smaller areas of connections - yet more effective (puzzling a bit)
+
+---
+## Nicole Baerg 'Automatic Detection of Speculation in Policy Statements'
+  - speculative speech in monetary policy
+    - analyzed discussions (pre-decisions)
+    - .. and decision documents
+    - had 2 editors (1 native english speaker; 1 in monetary policy area) markup speculative or not
+      - often difficult to get full agreement
+    - used wikipedia as training dataset
+      - since articles discourage speculation / non-concrete statements _writ large_
+      - editors mark words / phrases 'speculative' (so can be addressed later)
+    - shorter phrases, even unigrams, are better at predicting speculative areas
+    - best classifiers hit 82.5% accuracy
+
+---
+## Grants workshop discussion (Wed)
+  - John thinks the more ambitious a grant request is the more likely it is to be funded
+  - dont under-ask amounts
+    - can affect grant negatively
+    - NSF picks projects irrespective of $ -- $ is sorted out later
+  - share ideas early -- really helps in shaping and making better projects
+
+---
+# misc
+  - John mentioned Univ of Wisc. Political Ads group
+    - http://news.wisc.edu/wisconsin-advertising-project-to-analyze-2008-political-ads/ ?
+    - https://elections.wisc.edu/wiscads/ ?
